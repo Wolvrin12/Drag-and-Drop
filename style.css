@@ -1,0 +1,64 @@
+body {
+  margin: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+.alpha-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 5px;
+  border: solid springgreen 3px;
+}
+
+.alpha-container .container {
+  padding: 1rem;
+  margin: 15px;
+  background-color: rgb(0, 0, 0);
+  border: 2.5px dashed rgb(163, 163, 163);
+  border-radius: 5px;
+  text-align: center;
+  width: 75px;
+}
+
+.alpha-container .container.full {
+  border: 3px solid rgb(200, 200, 200);
+}
+
+.flesh {
+  color: blue;
+  font-size: 45px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container:empty {
+  height: 18px;
+}
+
+.draggable {
+  padding: 1rem;
+  margin: 15px;
+  background-color: rgb(115, 238, 191);
+  border: 2.5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  width: 75px;
+}
+
+.draggable.dragging {
+  background-color: rgb(100, 100, 100);
+  color: rgb(115, 238, 191);
+}
